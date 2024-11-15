@@ -35,6 +35,7 @@ a {
 h1 {
     font-size: 26px;
 }
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,6 @@ h1 {
 
 .logo {
     padding: 22px 22px 22px 0;
-    
 }
 
 .logo>img {
@@ -55,6 +55,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     color: grey;
+    margin-right: 40px;
 }
 
 .header-links>a {
@@ -94,6 +95,8 @@ h1 {
   translate: -100% 0;
   transition: .2s .2s,scale 0s .4s;
 }
+
+/****** Section Search ******/
 
 .search-container {
     padding: 30px 30px 30px 0;
@@ -144,6 +147,8 @@ input[type="text"] {
     border-radius: 0px 15px 15px 0px;
 }
 
+/****** Section Filters ******/
+
 .filter-container {
     display: flex;
     justify-content: space-between;
@@ -157,12 +162,16 @@ input[type="text"] {
 .filter {
     display: flex;
     align-items: center;
+    width: auto;
     height: 50px;
     padding: 4px 15px 4px 15px;
     gap: 10px;
     border: solid 3px #D9D9D9;
     border-radius: 50px;
     cursor: pointer;
+}
+.filter h3 {
+    justify-content: center;
 }
 
 .filter:hover {
@@ -188,10 +197,7 @@ input[type="text"] {
     width: 100%;
 }
 
-
-
-
-
+/****** Section Content ******/
 
 .section-title {
     margin: 0;
@@ -289,7 +295,7 @@ input[type="text"] {
 .show-more-link {
     font-size: 18px;
     font-weight: bold;
-    color: #000000; /* Couleur principale avec fallback */
+    color: #000000; 
     text-decoration: none;
     transition: color 0.2s;
     transition: transform 0.2s;
@@ -300,7 +306,7 @@ input[type="text"] {
     color: #004bb5; 
 }
 
-/****** Populaires ***********/
+/****** Populaires ******/
 
 .populaires {
     width: 32%;
@@ -340,7 +346,7 @@ input[type="text"] {
     margin-bottom: 5px;
 }
 
-/* ----- ACTIVITES ----- */
+/* ****** Activites ****** */
 
 
 .activites {
@@ -380,7 +386,7 @@ input[type="text"] {
     object-fit: cover;
 }
 
-/* -------- FOOTER ------ */
+/* ****** FOOTER ****** */
 
 .footer-container {
     display: flex;
@@ -391,7 +397,9 @@ input[type="text"] {
     box-sizing: border-box;
     border-radius: 0;
 }
-
+.footer-links {
+    margin: 0 22px;
+}
 
 .footer-links>ul {
     padding-left: 4px;
@@ -442,9 +450,37 @@ input[type="text"] {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activite-card-content img{
+        height: 330px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+
+    .footer-container,
+    .filter-container {
+        flex-direction: column;
+    }
+    .filter-container {
+     width: auto;
+     height: auto;
+    }
+    .filter {
+        width: 25%;
+    }
+    .activite-container {
+        justify-content: center;
+    }
+    .activite-card-content img{
+        height: 250px;
+    }
+    .footer-container {
+        width: 40%;
+    }
+    .footer-links {
+        padding: 10px;
+        margin: 0 10px;
+    }
 }
