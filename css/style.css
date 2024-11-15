@@ -32,6 +32,9 @@ a {
 
 /****** Personnalisé ******/
 
+h1 {
+    font-size: 26px;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -261,11 +264,11 @@ input[type="text"] {
     justify-content: space-between;
 }
 
-.hebergements-cards .card {
+.hebergement-card .card {
     padding-bottom: 8px;
 }
 
-.hebergements-cards img {
+.hebergement-card img {
     width: 250px;
     height: 124px;
     border-radius: 20px 20px 0 0 ;
@@ -327,13 +330,13 @@ input[type="text"] {
 }
 
 .populaires-cards .card-title,
-.hebergements-cards .card-title {
+.hebergement-card .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .populaires-cards .card-rating,
-.hebergements-cards .card-rating {
+.hebergement-card .card-rating {
     margin-bottom: 5px;
 }
 
